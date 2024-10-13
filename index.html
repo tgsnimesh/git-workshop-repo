@@ -40,6 +40,44 @@
       h1 {
         text-align: center;
       }
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .product-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        background-color: #fff;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      }
+
+      .product-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .product-card h3 {
+        margin: 10px 0;
+        font-size: 1.4rem;
+        color: #333;
+      }
+
+      .product-card p {
+        font-size: 1rem;
+        color: #777;
+        margin-bottom: 10px;
+      }
+
+      .product-card span {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #000;
+      }
     </style>
   </head>
   <body>
@@ -54,6 +92,52 @@
 
     <div class="container">
       <h1>Git Workshop</h1>
+    </div>
+
+    <div class="container product-grid">
+      <div class="product-card">
+        <h3>Product 1</h3>
+        <p>Handcrafted wooden sculpture</p>
+        <span>$50</span>
+      </div>
+
+      <div class="product-card">
+        <h3>Product 2</h3>
+        <p>Traditional pottery vase</p>
+        <span>$30</span>
+      </div>
+
+      <div class="product-card">
+        <h3>Product 3</h3>
+        <p>Handmade jewelry</p>
+        <span>$80</span>
+      </div>
+
+      <div class="product-card">
+        <h3>Product 4</h3>
+        <p>Ceylon fabric painting</p>
+        <span>$60</span>
+      </div>
+      <div class="product-card">
+        <h3>Product 5</h3>
+        <p>Ceylon fabric painting</p>
+        <span>$60</span>
+      </div>
+      <div class="product-card">
+        <h3>Product 6</h3>
+        <p>Ceylon fabric painting</p>
+        <span>$60</span>
+      </div>
+      <div class="product-card">
+        <h3>Product 7</h3>
+        <p>Ceylon fabric painting</p>
+        <span>$60</span>
+      </div>
+      <div class="product-card">
+        <h3>Product 8</h3>
+        <p>Ceylon fabric painting</p>
+        <span>$60</span>
+      </div>
     </div>
   </body>
 </html>
